@@ -12,11 +12,20 @@ public class WordManager {
     }
 
     public void start(){
+        welcome();
         selectMenu();
     }
 
-    public void showMenu(){
+    public void welcome(){
         System.out.println("*** 영단어 마스터 ***\n");
+    }
+
+    public void goodBye(){
+        System.out.println("Program Shutting Down! See you again!\n");
+    }
+
+    public void showMenu(){
+
         System.out.println("********************");
         System.out.print("1. 모든 단어 보기\n" +
                 "2. 수준별 단어 보기\n" +
@@ -34,6 +43,7 @@ public class WordManager {
             showMenu();
             int menu = s.nextInt();
             if (menu == 0) {
+                goodBye();
                 break;
             }
             else if (menu == 1) { // show all words

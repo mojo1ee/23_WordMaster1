@@ -12,6 +12,7 @@ public class WordManager {
     }
 
     public void start(){
+        wordCRUD.loadFile();
         welcome();
         selectMenu();
     }
@@ -53,6 +54,15 @@ public class WordManager {
             else if (menu == 4) { // add
                 //System.out.println("#4");
                 wordCRUD.addWordToList();
+            }
+            else if (menu == 5) { // update
+                wordCRUD.updateItem();
+            }
+            else if (menu == 6) { // delete
+                wordCRUD.deleteItem();
+            }
+            else if (menu == 7) { // save file
+                wordCRUD.saveFile();
             }
         }
     }

@@ -17,6 +17,10 @@ public class Word {
         return returnStr;
     }
 
+    public String toFileString(){
+        return getLevel() + "|" + getWord().trim() + "|" + getMeaning();
+    }
+
     Word(){}
 
     public Word(int id, int level, String word, String meaning) {

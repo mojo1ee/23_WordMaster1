@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79c2d710-b03c-4037-823f-b02a0b98bfcd" name="Changes" comment="updated loadFile() and saveFile() method">
+    <list default="true" id="79c2d710-b03c-4037-823f-b02a0b98bfcd" name="Changes" comment="updated searchLevel(), searchWord() methods">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/WordCRUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/WordCRUD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/WordManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/WordManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/ListAll.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/ListAll.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +82,7 @@
       <updated>1693916478238</updated>
       <workItem from="1693916479263" duration="11200000" />
       <workItem from="1694262807779" duration="1659000" />
-      <workItem from="1694504362438" duration="10095000" />
+      <workItem from="1694504362438" duration="11242000" />
     </task>
     <task id="LOCAL-00001" summary="WordMaster Project Part1">
       <created>1693923454656</created>
@@ -128,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694769692551</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="updated searchLevel(), searchWord() methods">
+      <created>1694819580095</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1694819580095</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,6 +160,7 @@
     <MESSAGE value="WordMaster Project Part1" />
     <MESSAGE value="updated goodBye() method" />
     <MESSAGE value="updated loadFile() and saveFile() method" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated loadFile() and saveFile() method" />
+    <MESSAGE value="updated searchLevel(), searchWord() methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated searchLevel(), searchWord() methods" />
   </component>
 </project>

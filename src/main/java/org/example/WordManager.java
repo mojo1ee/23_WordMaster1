@@ -48,8 +48,13 @@ public class WordManager {
                 break;
             }
             else if (menu == 1) { // show all words
-                //System.out.println("#1");
                 wordCRUD.showAll();
+            }
+            else if (menu == 2) { // search words by level
+                wordCRUD.searchLevel();
+            }
+            else if (menu == 3) { // search word
+                wordCRUD.searchWord();
             }
             else if (menu == 4) { // add
                 //System.out.println("#4");

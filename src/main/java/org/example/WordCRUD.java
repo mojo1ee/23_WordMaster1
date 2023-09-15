@@ -106,6 +106,26 @@ public class WordCRUD implements ICRUD{
         return searchList;
     }
 
+    public void showAll(int level){
+
+        for(int i = 0; i < 32; i++){System.out.print("-");}
+        System.out.println();
+
+        int count = 0;
+        for(int i = 0; i < list.size(); i++){
+            if (list.get(i).getLevel() == level) {
+                System.out.println(count + 1 + " " + list.get(i).toString());
+                count++;
+            }
+        }
+
+        if(list.size() == 0) System.out.println("등록된 단어가 없습니다");
+        if(count == 0) System.out.println("검색된 단어가 없습니다");
+
+        for(int i = 0; i < 32; i++){System.out.print("-");}
+        System.out.println("\n");
+    }
+
     public void updateItem() {
         System.out.print("수정할 단어 검색 : ");
         String keyword = s.next(); // accept keywords w/o spaces in between
@@ -143,7 +163,7 @@ public class WordCRUD implements ICRUD{
     public void saveFile() {
         PrintWriter pr = null;
         try {
-            pr = new PrintWriter(new FileWriter("test.txt"));
+            pr = new PrintWriter(new FileWriter(file));
             for(Word one: list){
                 pr.write(one.toFileString()+ "\n");
             }
@@ -154,5 +174,17 @@ public class WordCRUD implements ICRUD{
         }
 
 
+    }
+
+    public void searchLevel() {
+        System.out.print("=> 원하는 레벨은? (1~3): ");
+        int level = s.nextInt();
+        showAll(level);
+    }
+
+    public void searchWord() {
+        System.out.print("=> 원하는 단어는?: ");
+        String keyword = s.next(); //공백 불허
+        showAll(keyword);
     }
 }
